@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "es2020",
+      "module": "ESNEXT",
+      "rootDir": "./",
+      "strict": true,
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "noImplicitAny": true,
+      "strictNullChecks": true
+
+    }
+  }
+  

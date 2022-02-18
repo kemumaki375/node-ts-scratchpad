@@ -1,0 +1,21 @@
+{
+  "name": "ts-scratchpad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsc main.ts ; node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "kemumaki375",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.18",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "ts-node": "^10.5.0"
+  }
+}
