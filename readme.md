@@ -1,6 +1,6 @@
 # Readme
 
-scratchpad for playing around with typescript
+my personal scratchpad for playing around with typescript.
 
 ## Tips
 - install vs code runner
