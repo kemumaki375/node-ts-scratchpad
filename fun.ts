@@ -116,3 +116,34 @@ function pass<T>(arr : T[],  func?: (arg: T) => T) {
 
 console.log(pass([1,2,3]));
 console.log(pass([1,2,3], (n : number) => n +1));
+
+
+//! rest parameter
+function multiply(n: number, ...m: number[]) {
+  return m.map((x) => n * x);
+}
+// 'a' gets value [10, 20, 30, 40]
+const a = multiply(10, 1, 2, 3, 4);
+
+//! rest argument
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+arr1.push(...arr2);
+
+//! parameter destructuring
+// JS
+// function sum({ a, b, c }) {
+//   console.log(a + b + c);
+// }
+// sum({ a: 10, b: 3, c: 9 });
+
+
+function sum({ a, b, c }: { a: number; b: number; c: number }) {
+  console.log(a + b + c);
+}
+sum({ a: 10, b: 3, c: 9 });
+// Same as prior example
+type ABC = { a: number; b: number; c: number };
+function sum2({ a, b, c }: ABC) {
+  console.log(a + b + c);
+}
